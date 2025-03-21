@@ -1,4 +1,3 @@
-// src/App.tsx
 import './App.css';
 import { Box, Flex, Grid, GridItem, Show } from '@chakra-ui/react';
 import { GamesGrid } from './components/GamesGrid.tsx';

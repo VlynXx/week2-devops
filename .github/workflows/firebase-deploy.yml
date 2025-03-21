@@ -41,7 +41,7 @@ jobs:
         firebase deploy --only hosting --token ${{ secrets.FIREBASE_AUTH_TOKEN }}  # Deploy aplikasi ke Firebase Hosting
 
     - name: Cache node modules
-      uses: actions/cache@v2
+      uses: actions/cache@v3
       with:
         path: node_modules  # Menyimpan cache untuk node_modules agar lebih cepat pada build berikutnya
         key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}

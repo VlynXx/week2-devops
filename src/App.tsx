@@ -11,6 +11,7 @@ import { Navbar } from './components/Navbar.tsx';
 import { GameHeading } from './components/GameHeading.tsx';
 import { Footer } from './components/Footer.tsx';  // Import Footer
 
+
 function App() {
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 

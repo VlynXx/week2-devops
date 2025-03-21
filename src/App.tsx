@@ -9,6 +9,7 @@ import {GenreList} from "./components/GenreList.tsx";
 import {Navbar} from "./components/Navbar.tsx";
 import {GameHeading} from "./components/GameHeading.tsx";
 
+
 function App() {
     const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
     return (
@@ -53,5 +54,6 @@ function App() {
         </>
     )
 }
+
 
 export default App

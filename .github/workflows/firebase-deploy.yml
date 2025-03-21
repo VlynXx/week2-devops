@@ -18,6 +18,14 @@ jobs:
       with:
         node-version: '16'  # Menentukan versi Node.js yang digunakan
 
+    - name: Cache node modules
+      uses: actions/cache@v3
+      with:
+        path: node_modules  # Menyimpan cache untuk node_modules agar lebih cepat pada build berikutnya
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-modules-
+
     - name: Install dependencies
       run: |
         npm install  # Menginstal dependencies
